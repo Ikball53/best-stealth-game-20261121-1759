@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Moonlight Museum — 3 levels, 9 patrols, keyboard + mouse</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0f18; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; }
+  #stage { position: relative; width: 960px; height: 600px; }
+  canvas { display: block; background: #141b2a; border-radius: 6px; }
+  #muteBtn {
+    position: absolute; top: 6px; right: 8px; font: 10px monospace;
+    color: #cfe3ff; background: rgba(20, 30, 50, .75);
+    border: 1px solid #3a4d73; border-radius: 4px; padding: 2px 6px; cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+  <canvas id="game" width="960" height="600"></canvas>
+  <button id="muteBtn" type="button">sound: on (M)</button>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
