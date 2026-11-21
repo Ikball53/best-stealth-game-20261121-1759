@@ -2,24 +2,34 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Moonlight Museum — 3 levels, 9 patrols, keyboard + mouse</title>
-<style>
-  html, body { margin: 0; padding: 0; background: #0b0f18; height: 100%; }
-  body { display: flex; align-items: center; justify-content: center; }
-  #stage { position: relative; width: 960px; height: 600px; }
-  canvas { display: block; background: #141b2a; border-radius: 6px; }
-  #muteBtn {
-    position: absolute; top: 6px; right: 8px; font: 10px monospace;
-    color: #cfe3ff; background: rgba(20, 30, 50, .75);
-    border: 1px solid #3a4d73; border-radius: 4px; padding: 2px 6px; cursor: pointer;
-  }
-</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Night Vault: Ghost Route</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <div id="stage">
-  <canvas id="game" width="960" height="600"></canvas>
-  <button id="muteBtn" type="button">sound: on (M)</button>
+  <canvas id="vaultCanvas" width="960" height="600"></canvas>
+  <div id="hudBar">
+    <span id="hudGems">GEMS 0/6</span>
+    <span id="hudCoins">COINS 3</span>
+    <span id="hudClock">0:00</span>
+    <span id="hudGoal">Steal the Vault Crown, then reach the van</span>
+    <span id="alarmWrap">ALARM <span id="alarmTrack"><span id="alarmFill"></span></span></span>
+  </div>
+  <button id="muteButton" type="button">SOUND ON</button>
+  <div id="helpLine">WASD / arrows move &nbsp; SHIFT sneak &nbsp; Q or click toss coin &nbsp; R restart &nbsp; M mute</div>
+  <div id="endPanel" hidden>
+    <div id="endTitle">CLEAN GETAWAY</div>
+    <div id="endDetail">Score 0</div>
+    <div id="endHint">Press R to run it again</div>
+  </div>
 </div>
-<script type="module" src="./src/main.js"></script>
+<script src="config.js"></script>
+<script src="audio.js"></script>
+<script src="input.js"></script>
+<script src="vision.js"></script>
+<script src="actors.js"></script>
+<script src="render.js"></script>
+<script src="main.js"></script>
 </body>
 </html>

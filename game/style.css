@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0b0e17;
+  color: #e8ecf5;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#stage {
+  position: relative;
+  width: 960px;
+  margin: 12px auto;
+}
+#vaultCanvas {
+  display: block;
+  width: 960px;
+  height: 600px;
+  background: #141a2b;
+  border: 2px solid #39466b;
+  border-radius: 6px;
+}
+#hudBar {
+  position: absolute;
+  top: 8px;
+  left: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+  background: rgba(8, 11, 22, 0.72);
+  padding: 4px 8px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+#hudGoal { color: #ffd76a; }
+#alarmTrack {
+  display: inline-block;
+  width: 90px;
+  height: 8px;
+  background: #2a3350;
+  border: 1px solid #55648f;
+  vertical-align: middle;
+}
+#alarmFill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #ffcf4d;
+}
+#muteButton {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  background: rgba(8, 11, 22, 0.72);
+  color: #e8ecf5;
+  border: 1px solid #55648f;
+  border-radius: 4px;
+  padding: 4px 8px;
+  cursor: pointer;
+}
+#helpLine {
+  position: absolute;
+  left: 10px;
+  bottom: 8px;
+  font-size: 10px;
+  letter-spacing: 0.05em;
+  color: #aebadd;
+  background: rgba(8, 11, 22, 0.6);
+  padding: 3px 7px;
+  border-radius: 4px;
+  pointer-events: none;
+}
+#endPanel {
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: translateX(-50%);
+  text-align: center;
+  background: rgba(8, 11, 22, 0.88);
+  border: 1px solid #ffd76a;
+  border-radius: 6px;
+  padding: 8px 18px;
+}
+#endTitle { font-size: 15px; font-weight: 700; letter-spacing: 0.1em; color: #ffd76a; }
+#endDetail { font-size: 12px; margin-top: 3px; }
+#endHint { font-size: 10px; color: #aebadd; margin-top: 2px; }
