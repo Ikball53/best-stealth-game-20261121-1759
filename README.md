@@ -1,13 +1,22 @@
-[![make.fun · best-stealth-game-20261121-1759](https://make.fun/badge/best-stealth-game-20261121-1759.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
-[![rank](https://make.fun/badge/best-stealth-game-20261121-1759/Ikball53/best-stealth-game-20261121-1759/rank.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
-[![reward](https://make.fun/badge/best-stealth-game-20261121-1759/Ikball53/best-stealth-game-20261121-1759/reward.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759)
+[![make.fun · best-stealth-game-20261121-1759](https://make.fun/badge/best-stealth-game-20261121-1759.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759)
+[![rank](https://make.fun/badge/best-stealth-game-20261121-1759/Ikball53/best-stealth-game-20261121-1759/rank.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759)
+[![reward](https://make.fun/badge/best-stealth-game-20261121-1759/Ikball53/best-stealth-game-20261121-1759/reward.svg)](https://make.fun/bounty/best-stealth-game-20261121-1759)
 
-# Night Vault: Ghost Route
+# Ink & Ivory: The Map Vault
 
-A complete top-down stealth game for make.fun's "Make the best stealth game" bounty ($50, top 10 paid).
+A top-down stealth heist in a grand cartography archive. Steal every golden
+atlas page across three rooms — the Reading Hall, the Observatory, and the
+Vault of Charts — then slip out the green door unseen.
 
-Slip through the Entry Hall, Gallery and Vault unseen: read the guards' patrols and vision cones, hide behind crates and display cases, dodge the sweeping cameras, toss coins to pull a guard off route, grab the five loose gems, channel the Vault Crown, then reach the exit van. The alarm meter fills while you are seen and drains while you hide — a fair chance to recover before it hits 100%.
+Guards sweep yellow lantern cones along learnable patrols; brass cameras
+sweep red cones from fixed mounts. Crouch behind low map cabinets to break a
+sightline, toss coins to pull guards off their routes, and puff smoke to
+cross a watched hall. Sprinting is fast but loud. The alarm fills while you
+are seen and cools while you hide — break the cone and recover, or fill it
+and get caught.
 
-Controls: WASD / arrow keys move, SHIFT sneak, Q or mouse click tosses a coin toward the cursor, R restarts, M mutes. Sound effects per event with a mute button. Plays offline in desktop Chrome from static files under `game/` — no network, no build step.
-
-Entry for the bounty: https://make.fun/bounty/best-stealth-game-20261121-1759?utm_source=github&utm_medium=readme&utm_campaign=best-stealth-game-20261121-1759
+Controls: WASD or arrows to move, Shift to sprint, C to crouch, click or
+Space to throw a coin, Q for smoke, R to restart a room, M to mute. Plays
+offline in desktop Chrome from the static files under `game/`; open
+`game/index.html` to play. `node main.ts` copies `game/` and
+`screenshots/` to the output directory and writes `dossier.json`.
