@@ -3,33 +3,28 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Night Vault: Ghost Route</title>
-<link rel="stylesheet" href="style.css">
+<title>Ink &amp; Ivory: The Map Vault</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #10131c; height: 100%; }
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { position: relative; width: 960px; height: 640px; }
+  canvas { display: block; background: #1a2030; border: 2px solid #3a4358; border-radius: 6px; }
+  #muteBtn { position: absolute; top: 8px; right: 8px; font-size: 11px; padding: 3px 8px; background: #232b3f; color: #d8deee; border: 1px solid #4a5674; border-radius: 4px; cursor: pointer; }
+  #muteBtn:hover { background: #2e3852; }
+  #hint { color: #8b96b4; font-size: 12px; margin-top: 8px; text-align: center; max-width: 960px; }
+</style>
 </head>
 <body>
-<div id="stage">
-  <canvas id="vaultCanvas" width="960" height="600"></canvas>
-  <div id="hudBar">
-    <span id="hudGems">GEMS 0/6</span>
-    <span id="hudCoins">COINS 3</span>
-    <span id="hudClock">0:00</span>
-    <span id="hudGoal">Steal the Vault Crown, then reach the van</span>
-    <span id="alarmWrap">ALARM <span id="alarmTrack"><span id="alarmFill"></span></span></span>
-  </div>
-  <button id="muteButton" type="button">SOUND ON</button>
-  <div id="helpLine">WASD / arrows move &nbsp; SHIFT sneak &nbsp; Q or click toss coin &nbsp; R restart &nbsp; M mute</div>
-  <div id="endPanel" hidden>
-    <div id="endTitle">CLEAN GETAWAY</div>
-    <div id="endDetail">Score 0</div>
-    <div id="endHint">Press R to run it again</div>
-  </div>
+<div id="wrap">
+  <canvas id="stage" width="960" height="640"></canvas>
+  <button id="muteBtn" type="button">Sound: on</button>
 </div>
-<script src="config.js"></script>
-<script src="audio.js"></script>
-<script src="input.js"></script>
-<script src="vision.js"></script>
-<script src="actors.js"></script>
-<script src="render.js"></script>
-<script src="main.js"></script>
+<div id="hint">Move: WASD or arrows &middot; Sprint: Shift (noisy) &middot; Crouch: C &middot; Throw coin: click or Space &middot; Smoke: Q &middot; Restart: R &middot; Steal every atlas page, then reach the green door unseen.</div>
+<script src="src/levels.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/vision.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
 </body>
 </html>
